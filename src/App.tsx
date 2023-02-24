@@ -5,7 +5,7 @@ const dummyData = `JVBERi0xLjQKJcOkw7zDtsOfCjIgMCBvYmoKPDwvTGVuZ3RoIDMgMCBSL0Zpb
 export function App() {
   return (
     <div className="App">
-      <Viewer data={dummyData} />
+      <Viewer data={dummyData} buttons={{search: true,edit: true, message: true, share: true, info: true, download: true}}/>
     </div>
   )
 }

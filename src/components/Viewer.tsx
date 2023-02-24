@@ -8,6 +8,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = PDFJSWorker
 
 interface IViewerProps {
   data?: string
+  buttons?: {
+    search?: boolean,
+    edit?: boolean,
+    message?: boolean,
+    share?: boolean,
+    info?: boolean,
+    download?: boolean,
+  }
 }
 
 const Viewer = ({ data }: IViewerProps) => {
